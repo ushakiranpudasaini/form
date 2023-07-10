@@ -1,0 +1,131 @@
+<html class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                },
+                fontFamily: {
+                    poppins: ['Poppins', 'sans-serif'],
+                    Montserrat: ['Montserrat', 'sans-serif']
+                },
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap" rel="stylesheet">
+    <title>
+        Form 1
+    </title>
+</head>
+
+<body class="bg-stone-100">
+    <section class="py-16 bg-stone-100 font-poppins dark:bg-gray-800">
+        <div
+            class="max-w-4xl px-4 py-4 mx-auto bg-white border shadow-sm dark:border-gray-900 dark:bg-gray-900 lg:py-4 md:px-6">
+            <div class="mb-10 ">
+                <h2 class="pb-2 mb-2 text-xl font-bold text-gray-800 md:text-3xl dark:text-gray-300">
+                    Basic Info
+                </h2>
+                <p class="text-sm dark:text-gray-400">
+                    Lorem ipsum dor amet ispicusus isopiros amet ispis lorem
+                </p>
+            </div>
+            <form action="#" class="">
+                <div class="mb-6">
+                    <label for="" class="block mb-2 text-sm font-medium dark:text-gray-400">Full Name</label>
+                    <input type="text"
+                        class="block w-full px-4 py-3 mb-2 text-sm bg-gray-100 border rounded dark:placeholder-gray-400 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800"
+                        placeholder="Full name...." required>
+                </div>
+                <div class="mb-6">
+                    <label for="" class="block mb-2 text-sm font-medium dark:text-gray-400">Email</label>
+                    <input type="email" placeholder="abc@gmail.com" required
+                        class="block w-full px-4 py-3 mb-3 leading-tight placeholder-gray-400 bg-gray-100 border rounded ark:border-gray-800 dark:bg-gray-800 dark:placeholder-gray-500 dark:text-gray-400 dark:border-gray-800 ">
+                </div>
+                <div class="mb-6">
+                    <label for="" class="block mb-2 text-sm font-medium dark:text-gray-400">Message</label>
+                    <textarea type="message" placeholder="Message.." required
+                        class="block w-full px-4 py-6 leading-tight placeholder-gray-400 bg-gray-100 border rounded dark:placeholder-gray-400 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 "></textarea>
+                </div>
+                <div class="mb-8 ">
+                    <label class="mr-2 dark:text-gray-400">
+                        <input type="radio" name="inline-radio" value="option 1" class="checked:bg-gray-600 "
+                            checked="">
+                        <span class="ml-2">Male</span>
+                    </label>
+                    <label class="dark:text-gray-400">
+                        <input type="radio" name="inline-radio" value="option 2">
+                        <span class="ml-2">Female</span>
+                    </label>
+                </div>
+                <div class="mb-8 ">
+                    <h2 class="mb-4 text-sm font-semibold text-gray-700 dark:text-gray-400">Choose
+                        your proffession?
+                    </h2>
+                    <div class="flex flex-wrap items-center gap-6 ">
+                        <div class="flex items-center ">
+                            <input type="checkbox"
+                                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:border-gray-600">
+                            <label for="" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400">IT</label>
+                        </div>
+                        <div class="flex items-center ">
+                            <input type="checkbox"
+                                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:border-gray-600">
+                            <label for=""
+                                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400">Networking</label>
+                        </div>
+                        <div class="flex items-center ">
+                            <input type="checkbox"
+                                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:border-gray-600">
+                            <label for=""
+                                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400">Database</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 ">
+                    <label for="" class="block mb-2 text-sm font-medium dark:text-gray-400">Position</label>
+                    <div class="relative">
+                        <select name="select-name"
+                            class="block w-full px-4 py-3 mb-2 text-sm text-gray-500 placeholder-gray-400 bg-gray-100 border rounded appearance-none dark:text-gray-400 dark:bg-gray-800 dark:border-gray-800 ">
+                            <option value="">Manager</option>
+                            <option value="">Chairman</option>
+                            <option value="">CEO</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-600 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 ">
+                    <label for="" class="block mb-2 text-sm font-medium dark:text-gray-400">Placeholder</label>
+                    <div class="py-2 shrink-0">
+                        <img src="https://i.postimg.cc/rF6G0Dh9/pexels-emmy-e-2381069.jpg" alt=""
+                            class="object-cover rounded-full w-11 h-11" />
+                    </div>
+                    <label for="" class="block pt-2">
+                        <input type="file" class="block w-full text-sm text-slate-500 " />
+                    </label>
+                </div>
+                <button class="px-4 py-2 text-base text-gray-100 bg-blue-600 rounded hover:bg-blue-500">Send</button>
+        </div>
+        </form>
+        </div>
+    </section>
+</body>
+
+</html>
